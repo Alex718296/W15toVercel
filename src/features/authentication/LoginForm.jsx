@@ -6,14 +6,14 @@ import FormRowVertical from '../../ui/FormRowVertical';
 import { useLogin } from './useLogin';
 
 function LoginForm() {
-  const [email, setEmail] = useState('2114170@gmail.com');
-  const [password, setPassword] = useState('12345678');
+  const [email, setEmail] = useState('987654321@gmail.com');
+  const [password, setPassword] = useState('13578642');
 
-  const { login, isLoggedIn } = useLogin();
+  const { login, isLoading } = useLogin();
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log('LoginForm email password', email, password);
+    console.log('LogicForm email password ', email, password);
     if (!email || !password) return;
     login(
       { email, password },

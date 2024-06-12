@@ -112,17 +112,17 @@ function Uploader() {
       await deleteBookings();
       await deleteGuests();
       await deleteCabins();
-      toast.success('Successfully deleting bookings_xx, cabins_xx, guests_xx');
+      toast.success('Successfully deleting bookings_xx, cabins_xx, guests_xx ');
 
       // Bookings need to be created LAST
       await createGuests();
       await createCabins();
       await createBookings();
-      toast.success('Successfully creating bookings_xx, cabins_xx, guests_xx');
+      toast.success('Successfully creating bookings_xx, cabins_xx, guests_xx ');
 
       setIsLoading(false);
     } catch (error) {
-      toast.error('Error on loading...');
+      toast.error('Error on uploading');
     }
   }
 

@@ -4,8 +4,9 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Toaster } from 'react-hot-toast';
 
 import AppLayout from './ui/AppLayout';
-import LandingStatic_xx from './pages/open/page/LandingStatic_xx';
-import Landing_xx from './pages/open/page/Landing_xx';
+import ProtectedRoute from './ui/ProtectedRoute';
+import LandingStatic_xx from './pages/open/pages/LandingStatic_xx';
+import Landing_xx from './pages/open/pages/Landing_xx';
 
 import GlobalStyles from './styles/GlobalStyles';
 
@@ -43,11 +44,12 @@ const router = createBrowserRouter([
   },
   {
     path: '/',
-    element: <AppLayout />,
+    element: (
+      <ProtectedRoute>
+        <AppLayout />
+      </ProtectedRoute>
+    ),
     children: [
-      {
-        element: <Dashboard_xx />,
-      },
       {
         path: 'dashboard',
         element: <Dashboard_xx />,

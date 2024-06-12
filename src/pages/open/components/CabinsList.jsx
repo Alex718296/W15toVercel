@@ -19,9 +19,9 @@ const CabinsList = ({ cabins }) => {
           {cabins?.map((cabin) => {
             const { id, image, name, maxCapacity, regularPrice } = cabin;
             return (
-              <div className='flex border-primary-800 border' key={id}>
+              <div className='flex border-primary-800 border'>
                 <div className='flex-1 relative'>
-                  <img src={image} className='h-full w-fill object-cover' alt={name} />
+                  <img src={image} className='h-full w-fill object-cover' />
                 </div>
                 <div className='flex-grow'>
                   <div className='pt-5 pb-4 px-7 bg-primary-950'>
@@ -45,7 +45,9 @@ const CabinsList = ({ cabins }) => {
                       </p>
                     </div>
                     <p className='flex gap-3 justify-end items-baseline'>
-                      <span className='text-3xl font-[350]'>${regularPrice}</span>
+                      <span className='text-3xl font-[350]'>
+                        ${regularPrice}
+                      </span>
                       <span className='text-primary-200'>/ night</span>
                     </p>
                   </div>

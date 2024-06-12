@@ -13,16 +13,16 @@ const Landing_xx = () => {
             <div className='flex justify-between items-center max-w-7xl mx-auto'>
               <Link className='flex items-center gap-4 z-10' to='/'>
                 <img width='48px' height='36px' src='/logo.webp' />
-                <span>The Wild Oasis (Zhanlilin, 2114170xx)</span>
+                <span>The Wild Oasis (Tao, 210410469)</span>
               </Link>
               <nav className='z-10 text-xl'>
                 <ul className='flex gap-16 items-center'>
                   <li>
                     <Link
                       className='hover:text-accent-400 transition-colors'
-                      to=''
+                      to='/cabins'
                     >
-                      Home_xx
+                      Home_69
                     </Link>
                   </li>
                   <li>
