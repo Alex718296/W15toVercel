@@ -7,7 +7,7 @@ export const useCabinsOpen = () => {
     error,
     isLoading,
   } = useQuery({
-    queryKey: ['cabins_open_91'],
+    queryKey: ['cabins_open_xx'],
     queryFn: getCabins,
   });
   return { cabins, isLoading, error };

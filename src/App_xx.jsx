@@ -4,8 +4,8 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Toaster } from 'react-hot-toast';
 
 import AppLayout from './ui/AppLayout';
-import LandingStatic_91 from './pages/open/page/LandingStatic_91';
-import Landing_91 from './pages/open/page/Landing_91';
+import LandingStatic_xx from './pages/open/page/LandingStatic_xx';
+import Landing_xx from './pages/open/page/Landing_xx';
 
 import GlobalStyles from './styles/GlobalStyles';
 
@@ -14,7 +14,7 @@ import {
   Bookings_xx,
   Cabins_xx,
   Dashboard_xx,
-  Login_91,
+  Login_xx,
   PageNotFound_xx,
   Settings_xx,
   NewUsers_xx,
@@ -31,15 +31,15 @@ const queryClient = new QueryClient({
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Landing_91 />
+    element: <Landing_xx />,
   },
   {
     path: '/landing',
-    element: <Landing_91 />
+    element: <Landing_xx />,
   },
   {
     path: '/login',
-    element: <Login_91 />
+    element: <Login_xx />,
   },
   {
     path: '/',

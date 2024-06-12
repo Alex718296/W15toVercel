@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import { useCabinsOpen } from '../features/cabin/useCabinsOpen'
+import { useCabinsOpen } from '../features/cabin/useCabinsOpen';
 import CabinsList from '../components/CabinsList';
 
-const Landing_91 = () => {
+const Landing_xx = () => {
   const { cabins, isLoading } = useCabinsOpen();
-  console.log('Landing_91 cabins', cabins);
+  console.log('Landing_xx cabins', cabins);
   return (
     <>
       <div className='wild-oasis'>
@@ -13,16 +13,16 @@ const Landing_91 = () => {
             <div className='flex justify-between items-center max-w-7xl mx-auto'>
               <Link className='flex items-center gap-4 z-10' to='/'>
                 <img width='48px' height='36px' src='/logo.webp' />
-                <span>The Wild Oasis (Zhanlilin, 211417091)</span>
+                <span>The Wild Oasis (Zhanlilin, 2114170xx)</span>
               </Link>
               <nav className='z-10 text-xl'>
                 <ul className='flex gap-16 items-center'>
-                <li>
+                  <li>
                     <Link
                       className='hover:text-accent-400 transition-colors'
                       to=''
                     >
-                      Home_91
+                      Home_xx
                     </Link>
                   </li>
                   <li>
@@ -62,11 +62,11 @@ const Landing_91 = () => {
             </div>
           </header>
           <div className='flex-1 px-8 py-12 grid'>
-          <CabinsList cabins={cabins} />
+            <CabinsList cabins={cabins} />
           </div>
         </div>
       </div>
     </>
   );
 };
-export default Landing_91;
+export default Landing_xx;

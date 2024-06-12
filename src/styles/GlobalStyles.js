@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 :root {
@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
   --color-indigo-700: #4338ca;
 
   --color-red-100: #fee2e2;
-  --color-red-700: #b91c1c;
+  --color-red-700: #bxxc1c;
   --color-red-800: #991b1b;
 
   --backdrop-color: rgba(255, 255, 255, 0.1);
