@@ -4,9 +4,8 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Toaster } from 'react-hot-toast';
 
 import AppLayout from './ui/AppLayout';
-import ProtectedRoute from './ui/ProtectedRoute';
-import LandingStatic_xx from './pages/open/pages/LandingStatic_xx';
-import Landing_xx from './pages/open/pages/Landing_xx';
+import LandingStatic_91 from './pages/open/page/LandingStatic_91';
+import Landing_91 from './pages/open/page/Landing_91';
 
 import GlobalStyles from './styles/GlobalStyles';
 
@@ -15,7 +14,7 @@ import {
   Bookings_xx,
   Cabins_xx,
   Dashboard_xx,
-  Login_xx,
+  Login_91,
   PageNotFound_xx,
   Settings_xx,
   NewUsers_xx,
@@ -32,24 +31,23 @@ const queryClient = new QueryClient({
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Landing_xx />,
+    element: <Landing_91 />
   },
   {
     path: '/landing',
-    element: <Landing_xx />,
+    element: <Landing_91 />
   },
   {
     path: '/login',
-    element: <Login_xx />,
+    element: <Login_91 />
   },
   {
     path: '/',
-    element: (
-      <ProtectedRoute>
-        <AppLayout />
-      </ProtectedRoute>
-    ),
+    element: <AppLayout />,
     children: [
+      {
+        element: <Dashboard_xx />,
+      },
       {
         path: 'dashboard',
         element: <Dashboard_xx />,

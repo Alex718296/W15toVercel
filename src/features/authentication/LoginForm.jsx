@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import Button from '../../ui/Button';
-import Form from '../../ui/Form';
-import Input from '../../ui/Input';
-import FormRowVertical from '../../ui/FormRowVertical';
+import { useState } from "react";
+import Button from "../../ui/Button";
+import Form from "../../ui/Form";
+import Input from "../../ui/Input";
+import FormRowVertical from "../../ui/FormRowVertical";
 import { useLogin } from './useLogin';
 
 function LoginForm() {
-  const [email, setEmail] = useState('987654321@gmail.com');
-  const [password, setPassword] = useState('13578642');
+  const [email, setEmail] = useState("211417091@gmail.com");
+  const [password, setPassword] = useState("12345678");
 
-  const { login, isLoading } = useLogin();
+  const { login, isLoggedIn } = useLogin();
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log('LogicForm email password ', email, password);
+    console.log('LoginForm email password', email, password)
     if (!email || !password) return;
     login(
       { email, password },
@@ -28,27 +28,27 @@ function LoginForm() {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <FormRowVertical label='Email address'>
+      <FormRowVertical label="Email address">
         <Input
-          type='email'
-          id='email'
+          type="email"
+          id="email"
           // This makes this form better for password managers
-          autoComplete='username'
+          autoComplete="username"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormRowVertical>
-      <FormRowVertical label='Password'>
+      <FormRowVertical label="Password">
         <Input
-          type='password'
-          id='password'
-          autoComplete='current-password'
+          type="password"
+          id="password"
+          autoComplete="current-password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
       </FormRowVertical>
       <FormRowVertical>
-        <Button size='large'>Login</Button>
+        <Button size="large">Login</Button>
       </FormRowVertical>
     </Form>
   );

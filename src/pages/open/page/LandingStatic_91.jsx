@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const LandingStatic_xx = () => {
+const LandingStatic_91 = () => {
   return (
     <>
       <div className='wild-oasis'>
@@ -9,7 +9,7 @@ const LandingStatic_xx = () => {
             <div className='flex justify-between items-center max-w-7xl mx-auto'>
               <Link className='flex items-center gap-4 z-10' to='/'>
                 <img width='48px' height='36px' src='/logo.webp' />
-                <span>The Wild Oasis (123456789)</span>
+                <span>The Wild Oasis (211417091)</span>
               </Link>
               <nav className='z-10 text-xl'>
                 <ul className='flex gap-16 items-center'>
@@ -430,4 +430,4 @@ const LandingStatic_xx = () => {
     </>
   );
 };
-export default LandingStatic_xx;
+export default LandingStatic_91;
